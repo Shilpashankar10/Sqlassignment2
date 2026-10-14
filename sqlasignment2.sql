@@ -4,6 +4,7 @@ select distinct salary from employees;
 select age as employee_age, salary as employee_salary from employees;
 -- WHERE CLAUSE & OPERATORS
 select salary,hire_date from employees where salary > 50000 and hire_date < "2016-01-01";
+select * from employees where designation is null;
 update employees set designation = "Data Scientist" where designation is null;
 -- SORTING AND GROUPING DATA
 -- ORDER BY
